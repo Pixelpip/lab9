@@ -1,0 +1,83 @@
+/* index.css */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #2c3e50;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Navigation */
+.nav {
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: 400;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  color: #3498db;
+  transform: scale(1.1);
+}
+
+/* Active Link Style */
+.nav-link.active {
+  color: #3498db;
+  font-weight: 600;
+  transform: scale(1.1);
+}
+
+/* Horizontal Line Separator */
+.separator {
+  width: 80%;
+  border-color: #dcdcdc;
+  margin: 20px 0;
+}
+
+/* Main Content */
+main {
+  width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+}
